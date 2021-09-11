@@ -1,6 +1,6 @@
 // Require the necessary discord.js classes
 const { Client, Intents } = require('discord.js');
-const { token, token_dev, server_url } = require('./config.json');
+const { token, server_url } = require('./config.json');
 const axios = require('axios');
 
 // Create a new client instance
@@ -43,7 +43,7 @@ client.on('message', (msg) => {
     }
 });
 
-client.login(token_dev);
+client.login(token);
 // Login to Discord with your client's token
 
 
